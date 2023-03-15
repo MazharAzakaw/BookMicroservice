@@ -23,8 +23,8 @@ Open a web browser and navigate to http://localhost:8080/api/books. This should 
 Testing the Microservice
 To test the microservice, you can use a REST client such as Postman or the built-in functionality of your web browser. The following endpoints are available:
 
-GET /api/books: Get all books
-GET /api/books/{id}: Get a book by ID
-POST /api/books: Create a new book
-PUT /api/books/{id}: Update an existing book
-DELETE /api/books/{id}: Delete a book by ID
+# GET /api/books: Get all books
+# GET /api/books/{id}: Get a book by ID
+# POST /api/books: Create a new book
+# PUT /api/books/{id}: Update an existing book
+# DELETE /api/books/{id}: Delete a book by ID
