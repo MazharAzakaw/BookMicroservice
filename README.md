@@ -1,10 +1,10 @@
-Book Service Microservice
+# Book Microservice
 This is a microservice that manages a list of books. It provides RESTful APIs for retrieving, creating, updating, and deleting books. The microservice is implemented using .NET Core, ASP.NET Core, Entity Framework Core, and Docker. The data is stored in a SQL Server database.
 
-Prerequisites
+# Prerequisites
 To run this microservice, you need to have the following software installed on your machine:
 
-Docker
+# Docker
 .NET Core SDK 3.1
 Running the Microservice
 To run the microservice, follow these steps:
@@ -28,4 +28,3 @@ GET /api/books/{id}: Get a book by ID
 POST /api/books: Create a new book
 PUT /api/books/{id}: Update an existing book
 DELETE /api/books/{id}: Delete a book by ID
-Authentication and Authorization
