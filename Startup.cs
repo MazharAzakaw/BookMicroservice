@@ -16,7 +16,7 @@ namespace BookMicroservice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BookContext>(o => o.UseSqlServer(Configuration.GetConnectionString("BookDatabase")));
-            services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<IBookRepository, BookRepository>();      
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -24,13 +24,15 @@ namespace BookMicroservice
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+               
+                    app.UseSwagger();
+                    app.UseSwaggerUI();
+
             }
             else
             {
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
         }
     }
